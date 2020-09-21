@@ -12,7 +12,7 @@
     <title>ZKTeco</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-back" style="margin-bottom: -10px;">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-back">
         <a class="navbar-brand font-italic font-weight-bold" href="#">ZKTeco</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
               <a class="nav-link" href="attendance.html">Attendance</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">About</a>
+              <a class="nav-link" href="#">About</a>
             </li>
           </ul>
           <span class="navbar-text">
@@ -41,6 +41,40 @@
           </span>
         </div>
     </nav>
+   
+    <div class="row container-fluid">
+        <div class="col-md-2 block-one" style="padding-top: 50px; padding-left: 40px;">
+            <p><i class="fa fa-user-o" aria-hidden="true" style="padding-right: 20px;"></i>Deparmert</p>
+            <p><i class="fa fa-user-o" aria-hidden="true" style="padding-right: 20px;"></i>Area</p>
+            <p><i class="fa fa-user-o" aria-hidden="true" style="padding-right: 20px;"></i>Employee</p>
+        </div>
+        <div class="col-md-10 block-two">
+            <div class="container-fluid bg-light" style="padding: 20px; margin-top: 10px;">
+                <button type="button" class="btn btn-outline-info">Add</button>
+                <button type="button" class="btn btn-outline-success">Update</button>
+                <button type="button" class="btn btn-outline-danger">Delete</button>
+    
+                <div class="table-responsive" style="margin-top: 10px;">
+                    <table class="table table-bordered table-hover">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col"><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></th>
+                            <th scope="col">First</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+
+        </div>
+    </div>           
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

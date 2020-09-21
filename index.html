@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-back">
-        <a class="navbar-brand font-italic font-weight-bold" href="#">ZKTeco</a>
+        <a class="navbar-brand font-italic font-weight-bold" href="#">ZK<span style="color: white">Teco</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,11 +22,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Employee</a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="devices.html">Devices</a>
+              <a class="nav-link" href="employee.html">Employee</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Devices</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="attendance.html">Attendance</a>
@@ -41,40 +41,142 @@
           </span>
         </div>
     </nav>
-   
     <div class="row container-fluid">
         <div class="col-md-2 block-one" style="padding-top: 50px; padding-left: 40px;">
-            <p><i class="fa fa-user-o" aria-hidden="true" style="padding-right: 20px;"></i>Deparmert</p>
-            <p><i class="fa fa-user-o" aria-hidden="true" style="padding-right: 20px;"></i>Area</p>
-            <p><i class="fa fa-user-o" aria-hidden="true" style="padding-right: 20px;"></i>Employee</p>
+            <p><i class="fa fa-mobile fa-2x" aria-hidden="true" style="padding-right: 20px;"></i>Devices</p>
+            <p><i class="fa fa-map-o" aria-hidden="true" style="padding-right: 20px;"></i>Geo-Fence</p>
         </div>
-        <div class="col-md-10 block-two">
-            <div class="container-fluid bg-light" style="padding: 20px; margin-top: 10px;">
-                <button type="button" class="btn btn-outline-info">Add</button>
-                <button type="button" class="btn btn-outline-success">Update</button>
-                <button type="button" class="btn btn-outline-danger">Delete</button>
+        <div class="col-md-10 block-two ">
+            <div class="container-fluid bg-light rounded shadow" style="padding: 20px; margin-top: 10px;">
+              <button type="button" class="btn btn-secondary">Edit Liecnse</button>
+              <button type="button" class="btn btn-secondary">Edit Device</button>
+              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Data Clean
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="#">Dropdown link</a>
+                <a class="dropdown-item" href="#">Dropdown link</a>
+              </div>
+              <button id="btnGroupDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Device Menu
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+                <a class="dropdown-item" href="#">Dropdown link</a>
+                <a class="dropdown-item" href="#">Dropdown link</a>
+              </div>
+              <button id="btnGroupDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Data Transfer
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+                <a class="dropdown-item" href="#">Dropdown link</a>
+                <a class="dropdown-item" href="#">Dropdown link</a>
+              </div>
     
-                <div class="table-responsive" style="margin-top: 10px;">
-                    <table class="table table-bordered table-hover">
+                <div class="table-responsive rounded" style="margin-top: 10px;">
+                    <table class="table table-bordered table-hover talbe-sm">
                         <thead class="thead-dark">
                           <tr>
                             <th scope="col"><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></th>
-                            <th scope="col">First</th>
+                            <th scope="col">SerialNumber</th>
+                            <th scope="col">DeviceAlias</th>
+                            <th scope="col">LastUpdate</th>
+                            <th scope="col">AreaName</th>
+                            <th scope="col">UpdateStatus</th>
+                            <th scope="col">Licence</th>
+                            <th scope="col">DeviceName</th>
+                            <th scope="col">DeviceStatus</th>
+                            <th scope="col">DeviceTime</th>
+                            <th scope="col">MAC</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>BRMC20126</td>
+                            <td>department2</td>
+                            <td>26/07/2020</td>
+                            <td>Area3</td>
+                            <td>All Success</td>
+                            <td>6qhdjenehd</td>
+                            <td>null</td>
+                            <td>Registered</td>
+                            <td>4</td>
+                            <td>null</td>
                           </tr>
-
+                          <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>BOCK02126</td>
+                            <td></td>
+                            <td>02/08/2020</td>
+                            <td>DefaultArea</td>
+                            <td>All Success</td>
+                            <td>Taxdjenehd</td>
+                            <td>Biopro SA40</td>
+                            <td>Registered</td>
+                            <td>2</td>
+                            <td>00:17:61:10</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>CKJF230126</td>
+                            <td>departmentfa</td>
+                            <td>06/07/2020</td>
+                            <td>Area22</td>
+                            <td>All Success</td>
+                            <td>mgjenehd</td>
+                            <td>Speedfaceing</td>
+                            <td>Registered</td>
+                            <td>4</td>
+                            <td>00:17:61:10</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>A23N30126</td>
+                            <td>Devicetest</td>
+                            <td>06/07/2020</td>
+                            <td>Area3</td>
+                            <td>All Success</td>
+                            <td>mgjenehd</td>
+                            <td>P160/D</td>
+                            <td>Registered</td>
+                            <td>4</td>
+                            <td>00:17:61:22</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>CIZW30126</td>
+                            <td></td>
+                            <td>2020-08-14</td>
+                            <td>DefaultArea</td>
+                            <td>All Success</td>
+                            <td>v9252nehd</td>
+                            <td>Horus</td>
+                            <td>Registered</td>
+                            <td>4</td>
+                            <td>00:17:61:22</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>BRMC30126</td>
+                            <td>t</td>
+                            <td>2020-08-30</td>
+                            <td>DefaultArea</td>
+                            <td>All Success</td>
+                            <td>Djenehd</td>
+                            <td>null</td>
+                            <td>Registered</td>
+                            <td>4</td>
+                            <td>null</td>
+                          </tr>
                         </tbody>
                       </table>
                 </div>
             </div>
 
         </div>
-    </div>           
+    </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

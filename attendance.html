@@ -12,8 +12,8 @@
     <title>ZKTeco</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-back" style="margin-bottom: -10px;">
-        <a class="navbar-brand font-italic font-weight-bold" href="#">ZKTeco</a>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-back">
+        <a class="navbar-brand font-italic font-weight-bold" href="#">ZK<span style="color: white">Teco</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,10 +23,10 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Employee</a>
+              <a class="nav-link" href="employee.html">Employee</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="devices.html">Devices</a>
+              <a class="nav-link" href="index.html">Devices</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="attendance.html">Attendance</a>
@@ -42,8 +42,175 @@
         </div>
     </nav>
 
+    <div class="row container-fluid">
+      <div class="col-md-2 block-one" style="padding-top: 50px; padding-left: 40px;">
+          <p><i class="fa fa-book" aria-hidden="true" style="padding-right: 20px;"></i>Transaction</p>
+          <p><i class="fa fa-map-o" aria-hidden="true" style="padding-right: 20px;"></i>First & Last</p>
+          <p><i class="fa fa-calendar-o" aria-hidden="true" style="padding-right: 20px;"></i>First in Last Out</p>
+      </div>
+      <div class="col-md-10 block-two">
+          <div class="container-fluid bg-light shadow rounded" style="padding: 20px; margin-top: 10px;">
+                <div class="table-responsive rounded shadow" style="margin-top: 10px;">
+                  <table class="table table-bordered table-hover talbe-sm">
+                    <thead class="table-success">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"><input type="text" class="form-control" placeholder="Search" ></th>
+                        <th scope="col"><input type="text" class="form-control" placeholder="Search" ></th>
+                        <th scope="col"><input type="date" class="form-control"></th>
+                        <th scope="col">
+                          <button class="btn btn-success">Search</button>
+                        </th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <thead class="thead-dark">
+                        <tr>
+                          <th scope="col"><input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></th>
+                          <th scope="col">Employee ID</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">PunshData</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">VerifyType</th>
+                          <th scope="col">LocationName</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1</td>
+                          <td></td>
+                          <td>2020-08-14 17:59:29</td>
+                          <td></td>
+                          <td>FingerPrint</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>3</td>
+                          <td></td>
+                          <td>2020-08-14 17:54:29</td>
+                          <td></td>
+                          <td>FingerPrint</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1AB</td>
+                          <td></td>
+                          <td>2020-08-14 17:54:43</td>
+                          <td></td>
+                          <td>Face</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1</td>
+                          <td></td>
+                          <td>2020-08-14 17:11:07</td>
+                          <td></td>
+                          <td>FingerPrint</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>3</td>
+                          <td></td>
+                          <td>2020-08-14 17:11:29</td>
+                          <td></td>
+                          <td>FingerPrint</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1AB</td>
+                          <td></td>
+                          <td>2020-08-14 16:59:29</td>
+                          <td></td>
+                          <td>Face</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1AB</td>
+                          <td></td>
+                          <td>2020-08-14 14:21:06</td>
+                          <td></td>
+                          <td>Face</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1</td>
+                          <td></td>
+                          <td>2020-08-14 14:18:29</td>
+                          <td></td>
+                          <td>Face</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1AB</td>
+                          <td></td>
+                          <td>2020-08-14 00:27:29</td>
+                          <td>Check-Out</td>
+                          <td>Face</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1AB</td>
+                          <td></td>
+                          <td>2020-08-14 00:25:29</td>
+                          <td>Check-In</td>
+                          <td>Face</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1</td>
+                          <td></td>
+                          <td>2020-08-29 00:24:28</td>
+                          <td>Check-In</td>
+                          <td>Face</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1AB</td>
+                          <td></td>
+                          <td>2020-08-14 00:24:29</td>
+                          <td>Check-In</td>
+                          <td>FingerPrint</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1AB</td>
+                          <td></td>
+                          <td>2020-08-14 01:12:57</td>
+                          <td></td>
+                          <td>FingerPrint</td>
+                          <td>t</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><input type="checkbox"></th>
+                          <td>1AB</td>
+                          <td></td>
+                          <td>2020-08-14 01:11:50</td>
+                          <td></td>
+                          <td>FingerPrint</td>
+                          <td>t</td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>
+          </div>
 
-<h1 class="text center">You are in Attendance page</h1>
+      </div>
+  </div>
+
 
 
 
